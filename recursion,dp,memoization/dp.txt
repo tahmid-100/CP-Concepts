@@ -1,0 +1,45 @@
+                                            Dynamic Programming
+
+Use case-->1.counting/number of ways
+           2.minimization/maximization
+
+https://cses.fi/problemset/task/1633--->number of ways
+
+#include <bits/stdc++.h>
+using namespace std;
+
+typedef long long ll;
+
+#define optimize() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+#define endl '\n'
+
+#define mod 1000000007
+
+int main() {
+    optimize();
+
+    int n;
+    cin >> n;
+
+    vector<ll> dp(n + 1, 0);
+    dp[0] = 1;
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= 6; j++) {
+            if (i - j >= 0) {
+                dp[i] = (dp[i] + dp[i - j]) % mod;
+            }
+        }
+    }
+
+    cout << dp[n] << endl;
+
+}
+
+
+
+
+
+https://leetcode.com/problems/climbing-stairs/     
+
+cses dp problems
+atcoder dp problems
