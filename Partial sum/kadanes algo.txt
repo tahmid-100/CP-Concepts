@@ -1,0 +1,25 @@
+
+
+int main() {
+    optimize();
+
+// max subarray
+
+ int arr[5]={1,2,3,4,5};
+
+ for(int st=0;st<5;st++){
+
+    for(int ended=st;ended<5;ended++){
+        for(int i=st;i<=ended;i++){
+
+            cout<<arr[i];
+        }
+
+         cout<<" ";
+
+    }
+           cout<<endl;
+
+ }
+
+}
