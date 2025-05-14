@@ -10,7 +10,7 @@ int main() {
  for(int st=0;st<5;st++){
 
     for(int ended=st;ended<5;ended++){
-        for(int i=st;i<=ended;i++){
+        for(int i=st;i<=ended;i++){            o(n^3)
 
             cout<<arr[i];
         }
@@ -19,6 +19,28 @@ int main() {
 
     }
            cout<<endl;
+
+ }
+
+}
+
+
+int main() {
+    optimize();
+
+// max subarray
+
+ int arr[5]={1,2,3,4,5};
+
+ int mx_sum=INT_MIN;
+
+ for(int st=0;st<5;st++){
+         int curr_sum=0;
+    for(int ended=st;ended<5;ended++){
+          curr_sum+=arr[end];
+          mx_sum=mx_sum(curr_sum,mx);
+    }
+         
 
  }
 
